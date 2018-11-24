@@ -1,0 +1,15 @@
+server:
+  port: 9090
+  use-forward-headers: true
+  context-path: /auth
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: auth-service
+oauth2:
+  jwt-secret-key: 12345
+#logging:
+# level:
+#  org.springframework.security: DEBUG
+

@@ -1,0 +1,22 @@
+server:
+ port: 8080
+logging:
+ level:
+  org.springframework.web: DEBUG
+#properties for remote token validation
+#auth:
+# server:
+#  url: http://localhost:9090/auth/oauth/check_token
+#  clientId: clientIdMock
+#  clientsecret: clientSecretMock
+
+#self token validation
+#key should be same as auth server's key
+oauth2:
+  jwt-secret-key: 12345
+spring:
+  application:
+    name: rest-service
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
